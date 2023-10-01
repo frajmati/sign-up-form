@@ -1,0 +1,327 @@
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* VARIABLES */
+
+:root {
+    --black: #202223;
+    --darkblack: #040808;
+    --white: #e3e3e3;
+    --marginleft: 30px;
+}
+
+/* GRADIENTE DEL FONDO */
+
+body {
+    background: linear-gradient(to bottom right, rgb(249 250 250), rgb(129 136 144));
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* MAIN PARA TENERLO COMO DOS SECCIONES */
+
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 90%;
+}
+
+/* IMAGEN DE FONDO */
+
+.left {
+    width: 35%;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* PANEL DERECHO */
+
+.right {
+    width: 65%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* LOS DOS TÍTULOS DE RIGHT */
+
+.text {
+    position: relative;
+    bottom: 50px;
+}
+
+.right__img {
+    position: absolute;
+    right: var(--marginleft);
+    right: 30px;
+    top: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+/* TEXTO DE WELCOME.. */
+
+.right__h1 {
+    color: var(--black);
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: var(--marginleft);
+}
+
+/* TEXTO DE CREATE AN ACCOUNT OR... */
+
+.right__p {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: var(--marginleft);
+}
+
+/* FORMULARIO */
+
+.form {
+    color: var(--white);
+    background-color: var(--darkblack);
+    box-shadow: 0px 15px 50px -15px rgba(255, 255, 255, .2);   
+    padding: 20px 0;
+}
+
+/* TEXTO DE LET'S DO THIS */
+
+.form__h3 {
+    color: var(--white);
+    font-size: 25px;
+    margin-left: var(--marginleft);
+    margin-bottom: 25px;
+}
+
+.inputs__left {
+    width: 50%;
+}
+
+.inputs__right {
+    width: 50%;
+}
+
+.inputs {
+    display: flex;
+}
+
+/* CONTENEDOR DE INPUT Y LABEL */
+
+.container__input {
+    margin: var(--marginleft);
+    margin-top: 0;
+}
+
+/* CLASE DE CADA LABEL INDIVIDUAL */
+
+.label {
+    display: inline-block;
+    font-weight: 300;
+}
+
+/* CLASE DE CADA INPUT INDIVIDUAL */
+
+.input {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    outline: none;
+    background-color: var(--black);
+    width: 90%;
+    height: 25px;
+    color: var(--white);
+    font-weight: 300;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.input:focus {
+    outline: 1px solid #2f89ff;
+}
+
+.info__validation {
+    font-weight: 300;
+    font-size: 14px;
+    position: relative;
+}
+
+
+
+/* BOTÓN DE CREAR CUENTA */
+
+.submit__container {
+    margin-left: var(--marginleft);
+    margin-top: 6px;
+}
+
+.btn__submit {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 20px;
+    border: none;
+    background-color: #2f89ff;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: .7s;
+    box-shadow: 0 0 15px 0 rgba(255, 255, 255, .2);
+}
+
+.btn__submit:hover {
+    cursor: pointer;
+    background-color: #4294FF;
+}
+
+/* LAS OPCIONES FINALES, LOG IN */
+
+.options {
+    margin-left: var(--marginleft);
+    margin-top: 15px;
+}
+
+/* TEXTO DE ALREADY... */
+
+.options__p {
+    color: var(--black);
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 300;
+}
+
+/* LINK PARA LOG IN */
+
+.options__a {
+    color: #4294FF;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1140px) {
+    .main {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 90%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+
+    :root {
+        --marginleft: 10px;
+    }
+
+    body {
+        width: 100%;
+        background: #fff;
+    }
+
+    .main {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .right {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .left {
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    .text {
+        bottom: 0;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+    .submit__container {
+        margin-top: 20px;
+    }
+
+    .right__h1 {
+        font-size: 40px;
+    }
+
+    .right__p {
+        font-size: 20px;
+    }
+
+    .right__img {
+        width: 50px;
+        height: 50px;
+        right: 10px;
+    }
+
+    .form__h3 {
+        margin-bottom: 10px;
+    }
+
+    .label {
+        font-size: 14px;
+    }
+
+    .input {
+        font-size: 14px;
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .inputs {
+        flex-direction: column;
+    }
+
+    .inputs__left {
+        width: 100%;
+    }
+
+    .inputs__right {
+        width: 100%;
+    }
+
+    .input__password {
+        margin-bottom: 10px;
+    }
+
+    .info__validation {
+        position: relative;
+        top: -10px;
+    }
+
+    .btn__submit {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .options__p {
+        font-size: 20px;
+    }
+
+    .options__a {
+        font-size: 20px;
+    }
+
+}

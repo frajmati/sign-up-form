@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="odin_icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <title>Sign-up Form</title>
+</head>
+<body>
+    <main class="main">
+        
+        <div class="left"></div>
+
+        <div class="right">
+            <div class="text">
+                <img src="person.png" alt="Icon of a person" class="right__img">
+                <h1 class="right__h1">Welcome!</h1>
+                <p class="right__p">Create an account or log in.</p>
+            </div>
+
+            <form action="" method="">
+
+                <div class="form">
+
+                    <h3 class="form__h3">Let's do this!</h3>
+
+                    <div class="inputs">
+
+                        <div class="inputs__left">
+                            <div class="container__input">
+                                <label for="first__name" class="label">FIRST NAME</label>
+                                <input type="text" name="first__name" id="first__name" class="input input__first__name" required>
+                            </div>   
+                            <div class="container__input">
+                                <label for="email" class="label">EMAIL</label>
+                                <input type="text" name="email" id="email" class="input input__email" required>
+                            </div>  
+                            <div class="container__input">
+                                <label for="password" class="label">PASSWORD</label>
+                                <input type="password" name="password" id="password" class="input input__password" required>
+                                <p class="info__validation"></p>
+                            </div>  
+                        </div>
+    
+                        <div class="inputs__right">
+                            <div class="container__input">
+                                <label for="name" class="label">LAST NAME</label>
+                                <input type="text" name="name" id="last__name" class="input input__last__name" required>
+                            </div> 
+                            <div class="container__input">
+                                <label for="number" class="label">PHONE NUMBER</label>
+                                <input type="text" name="number" id="number" class="input input__number" required>
+                            </div> 
+                            <div class="container__input">
+                                <label for="confirm__password" class="label">CONFIRM PASSWORD</label>
+                                <input type="password" name="confirm__password" id="confirm__password" class="input input__confirm__password" required>
+                            </div> 
+                        </div>
+    
+                    </div>
+                </div>
+                
+                <div class="submit__container">
+                    <input type="submit" class="btn__submit" value="Create Account" disabled></input>
+                </div>
+                
+            </form>
+
+            
+            
+            <div class="options">
+                <p class="options__p">Already have an account?</p>
+                <a href="#" class="options__a">Log In</a>
+            </div>
+        </div>
+
+        
+    </main>
+</body>
+</html>
